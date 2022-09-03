@@ -1,15 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1658053661525" clover="3.2.0">
-  <project timestamp="1658053661525" name="All files">
-    <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1" elements="4" coveredelements="4" complexity="0" loc="3" ncloc="3" packages="1" files="2" classes="2"/>
-    <file name="ActionButton.vue" path="/home/magda/projects/vue-projects/job-search/src/components/ActionButton.vue">
-      <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
-      <line num="10" count="1" type="stmt"/>
+<coverage generated="1662230257471" clover="3.2.0">
+  <project timestamp="1662230257472" name="All files">
+    <metrics statements="7" coveredstatements="7" conditionals="0" coveredconditionals="0" methods="4" coveredmethods="4" elements="11" coveredelements="11" complexity="0" loc="7" ncloc="7" packages="1" files="3" classes="3"/>
+    <file name="ActionButton.vue" path="/home/magda/projects/following-Vue-masterclass/src/components/ActionButton.vue">
+      <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
+      <line num="8" count="2" type="stmt"/>
+      <line num="20" count="6" type="stmt"/>
+      <line num="27" count="2" type="stmt"/>
     </file>
-    <file name="ProfileImage.vue" path="/home/magda/projects/vue-projects/job-search/src/components/ProfileImage.vue">
+    <file name="ProfileImage.vue" path="/home/magda/projects/following-Vue-masterclass/src/components/ProfileImage.vue">
       <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
-      <line num="6" count="1" type="stmt"/>
+      <line num="6" count="2" type="stmt"/>
       <line num="9" count="1" type="stmt"/>
+    </file>
+    <file name="SubNav.vue" path="/home/magda/projects/following-Vue-masterclass/src/components/SubNav.vue">
+      <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+      <line num="13" count="2" type="stmt"/>
+      <line num="16" count="2" type="stmt"/>
     </file>
   </project>
 </coverage>
