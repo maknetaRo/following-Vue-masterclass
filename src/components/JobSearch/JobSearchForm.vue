@@ -5,11 +5,10 @@
     <font-awesome-icon :icon="['fas', 'search']" class="ml-4 mr-3" />
     <div class="flex flex-nowrap flex-1 h-full text-base font-light">
       <div class="relative flex items-center flex-1 h-full pr-3">
-        <label for="" class="absolute left-0 -top-10">Role</label>
-        <input
-          type="text"
+        <label for="" class="absolute left-0 -top-10">Role </label>
+        <text-input
           placeholder="Software engineer"
-          class="w-full text-lg font-normal focus:outline-none"
+          @handle-input="updateRole"
         />
       </div>
       <span
@@ -18,11 +17,7 @@
       >
       <div class="relative flex items-center flex-1 h-full pl-3">
         <label for="" class="absolute left-0 -top-10">Where?</label>
-        <input
-          type="text"
-          placeholder="Los Angeles"
-          class="w-full text-lg font-normal focus:outline-none"
-        />
+        <text-input placeholder="Los Angeles" @handle-input="updateLocation" />
       </div>
     </div>
     <action-button text="Search" type="secondary" class="rounded-r-3xl" />
@@ -30,12 +25,28 @@
 </template>
 
 <script>
-import ActionButton from "@/components/ActionButton.vue";
+import ActionButton from "@/components/Shared/ActionButton.vue";
+import TextInput from "@/components/Shared/TextInput.vue";
 
 export default {
   name: "JobSearchForm",
   components: {
     ActionButton,
+    TextInput,
+  },
+  data() {
+    return {
+      role: "",
+      location: "",
+    };
+  },
+  methods: {
+    updateRole(payload) {
+      this.role = payload;
+    },
+    updateLocation(payload) {
+      this.location = payload;
+    },
   },
 };
 </script>
