@@ -4,3 +4,4 @@
 4. As a user, I'd like to know the number of jobs that matched my search results so that I can be sure my filters are being applied.
 5. As a user, I'd like to know what I can do at the company so that I get excited about working for the company.
 6. As a user, I'd like to provide the role that I'm interested in adn the city I'd like to work in so that I can find job listings that are relevant to me.
+7. As a user, I'd like to navigate to a different page to see my job results so that I am not overwhelmed by the home page's content.
