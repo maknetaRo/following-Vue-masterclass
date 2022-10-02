@@ -28,7 +28,7 @@ describe("Headline", () => {
     const actionPhrase = wrapper.find("[data-test='action-phrase']");
     expect(actionPhrase.text()).toBe("Create for everyone");
   });
-  it("removes intervalwhen component disappears", () => {
+  it("removes interval when component disappears", () => {
     const wrapper = mount(Headline);
     wrapper.unmount();
     expect(clearInterval).toHaveBeenCalled();

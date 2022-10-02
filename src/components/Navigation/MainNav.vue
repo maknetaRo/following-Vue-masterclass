@@ -4,9 +4,14 @@
       <div
         class="flex flex-nowrap h-full px-8 mx-auto border-b border-solid border-brand-gray-1"
       >
-        <a :href="url" class="flex items-center h-full text-xl">{{
+        <!-- <a :href="url" class="flex items-center h-full text-xl">{{
           company
-        }}</a>
+        }}</a> -->
+        <router-link
+          :to="{ name: 'Home' }"
+          class="flex items-center h-full text-xl"
+          >{{ company }}</router-link
+        >
 
         <nav class="h-full ml-12">
           <ul class="flex h-full p-0 m-0 list-none">
@@ -19,6 +24,13 @@
               <a href="" class="flex items-center h-full py-2.5">{{
                 menuItem
               }}</a>
+            </li>
+            <li class="h-full ml-9 first:ml-0" data-test="main-nav-list-item">
+              <router-link
+                to="/jobs/results"
+                class="flex items-center h-full py-2.5"
+                >Jobs</router-link
+              >
             </li>
           </ul>
         </nav>
@@ -53,14 +65,12 @@ export default {
   data() {
     return {
       company: "Dev Careers",
-      url: "https://careers.google.com",
       menuItems: [
         "Teams",
         "Locations",
         "Life at Dev Corp",
         "Now we hire",
         "Students",
-        "Jobs",
       ],
       isLoggedIn: false,
     };
